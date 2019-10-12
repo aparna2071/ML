@@ -3,18 +3,18 @@ import numpy as np
 arr=np.array([1,2,3])
 print(arr)
 #2-D ARRAY
-a=np.array([[1,2,3],[4,5,6]])                          m
-print(a)
+b=np.array([[1,2,3],[4,5,6]])                          
+print(b)
 #DIMENSIONS OF ARRAY
 print(arr.ndim)
-print(a.ndim)
+print(b.ndim)
 #SHAPE OF ARRAY
 print(arr.shape)
-print(a.shape)
+print(b.shape)
 
 #changing shape
-a.shape=(6,)
-print(a)
+b.shape=(6,)
+print(b)
 
 #question 
 import numpy as np
