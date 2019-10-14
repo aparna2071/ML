@@ -1,0 +1,305 @@
+Sentiment analysis is the automated process that uses machine learning for identifying subjective information from text. Companies use sentiment analysis for analyzing data such as tweets, survey responses and product reviews, getting key insights and making data-driven decisions.
+
+Sentiment Analysis
+
+In a world where we generate 2.5 quintillion bytes of data every day, sentiment analysis has become a key tool for making sense of that data.
+
+But… How does it work?
+
+What are the different approaches? What are its caveats and limitations? How can you use sentiment analysis in your business?
+
+Below, you’ll find the answers to these questions and everything you need to know about sentiment analysis. No matter if you are an experienced data scientist, a developer, a marketer, a product analyst, or if you’re just getting started with text analysis, this comprehensive guide is for you.
+
+Read along, bookmark it for later, or jump to the sections of your interest. This guide is divided into four sections:
+
+The Basics of Sentiment Analysis
+What is sentiment analysis?
+Scope
+Types
+Why is sentiment analysis important?
+How Does Sentiment Analysis Work?
+
+Algorithms
+Challenges
+How accurate is sentiment analysis?
+Use Cases and Applications
+
+Social media monitoring
+Brand monitoring
+Customer feedback
+Customer service
+Market research
+Resources
+
+Where to start?
+Online demos
+Tutorials
+Research literature
+Datasets
+Tools and APIs
+Let’s get started!
+
+The Basics of Sentiment Analysis
+The Basics of Sentiment Analysis
+What is Sentiment Analysis?
+Sentiment analysis is the automated process of analyzing text data and classifying opinions as negative, positive or neutral. Businesses can use sentiment analysis to monitor brand reputation in social media and to understand what clients like and dislike about their product or service.
+
+Usually, besides identifying the opinion, these systems extract attributes of the expression e.g.:
+
+Polarity: if the speaker express a positive or negative opinion,
+Subject: the thing that is being talked about,
+Opinion holder: the person, or entity that expresses the opinion.
+Currently, sentiment analysis is a topic of great interest and development since it has many practical applications. Since publicly and privately available information over Internet is constantly growing, a large number of texts expressing opinions are available in review sites, forums, blogs, and social media.
+
+With the help of sentiment analysis systems, this unstructured information could be automatically transformed into structured data of public opinions about products, services, brands, politics, or any topic that people can express opinions about. This data can be very useful for commercial applications like marketing analysis, public relations, product reviews, net promoter scoring, product feedback, and customer service.
+
+Sentiment Analysis Example
+
+Sentiment Analysis Scope
+Sentiment analysis can be applied at different levels of scope:
+
+Document level sentiment analysis obtains the sentiment of a complete document or paragraph.
+Sentence level sentiment analysis obtains the sentiment of a single sentence.
+Sub-sentence level sentiment analysis obtains the sentiment of sub-expressions within a sentence.
+Types of Sentiment Analysis
+There are many types and flavors of sentiment analysis and SA tools range from systems that focus on polarity (positive, negative, neutral) to systems that detect feelings and emotions (angry, happy, sad, etc) or identify intentions (e.g. interested v. not interested). In the following section, we’ll cover the most important ones.
+
+Fine-grained Sentiment Analysis
+Sometimes you may be also interested in being more precise about the level of polarity of the opinion, so instead of just talking about positive, neutral, or negative opinions you could consider the following categories:
+
+Very positive
+Positive
+Neutral
+Negative
+Very negative
+This is usually referred to as fine-grained sentiment analysis. This could be, for example, mapped onto a 5-star rating in a review, e.g.: Very Positive = 5 stars and Very Negative = 1 star.
+
+Some systems also provide different flavors of polarity by identifying if the positive or negative sentiment is associated with a particular feeling, such as, anger, sadness, or worries (i.e. negative feelings) or happiness, love, or enthusiasm (i.e. positive feelings).
+
+Emotion detection
+Emotion detection aims at detecting emotions like, happiness, frustration, anger, sadness, and the like. Many emotion detection systems resort to lexicons (i.e. lists of words and the emotions they convey) or complex machine learning algorithms.
+
+One of the downsides of resorting to lexicons is that the way people express their emotions varies a lot and so do the lexical items they use. Some words that would typically express anger like shit or kill (e.g. in your product is a piece of shit or your customer support is killing me) might also express happiness (e.g. in texts like This is the shit or You are killing it).
+
+Aspect-based Sentiment Analysis
+Usually, when analyzing the sentiment in subjects, for example products, you might be interested in not only whether people are talking with a positive, neutral, or negative polarity about the product, but also which particular aspects or features of the product people talk about. That's what aspect-based sentiment analysis is about. In our previous example:
+
+"The battery life of this camera is too short."
+
+The sentence is expressing a negative opinion about the camera, but more precisely, about the battery life, which is a particular feature of the camera.
+
+Intent analysis
+Intent analysis basically detects what people want to do with a text rather than what people say with that text. Look at the following examples:
+
+“Your customer support is a disaster. I’ve been on hold for 20 minutes”.
+
+“I would like to know how to replace the cartridge”.
+
+“Can you help me fill out this form?”
+
+A human being has no problems detecting the complaint in the first text, the question in the second text, and the request in the third text. However, machines can have some problems to identify those. Sometimes, the intended action can be inferred from the text, but sometimes, inferring it requires some contextual knowledge.
+
+Multilingual sentiment analysis
+Multilingual sentiment analysis can be a difficult task. Usually, a lot of preprocessing is needed and that preprocessing makes use of a number of resources. Most of these resources are available online (e.g. sentiment lexicons), but many others have to be created (e.g. translated corpora or noise detection algorithms). The use of the resources available requires a lot of coding experience and can take long to implement.
+
+An alternative to that would be detecting language in texts automatically, then train a custom model for the language of your choice (if texts are not written in English), and finally, perform the analysis.
+
+Check out these sentiment analysis examples to learn more about the different types of sentiment analysis.
+
+
+
+Why sentiment analysis is important?
+It’s estimated that 80% of the world’s data is unstructured and not organized in a pre-defined manner. Most of this comes from text data, like emails, support tickets, chats, social media, surveys, articles, and documents. These texts are usually difficult, time-consuming and expensive to analyze, understand, and sort through.
+
+Sentiment analysis systems allows companies to make sense of this sea of unstructured text by automating business processes, getting actionable insights, and saving hours of manual data processing, in other words, by making teams more efficient.
+
+Some of the advantages of sentiment analysis include the following:
+
+Scalability:
+Can you imagine manually sorting through thousands of tweets, customer support conversations, or customer reviews? There’s just too much data to process manually. Sentiment analysis allows to process data at scale in a efficient and cost-effective way.
+
+Real-time analysis:
+We can use sentiment analysis to identify critical information that allows situational awareness during specific scenarios in real-time. Is there a PR crisis in social media about to burst? An angry customer that is about to churn? A sentiment analysis system can help you immediately identify these kinds of situations and take action.
+
+Consistent criteria:
+Humans don’t observe clear criteria for evaluating the sentiment of a piece of text. It’s estimated that different people only agree around 60-65% of the times when judging the sentiment for a particular piece of text. It’s a subjective task which is heavily influenced by personal experiences, thoughts, and beliefs. By using a centralized sentiment analysis system, companies can apply the same criteria to all of their data. This helps to reduce errors and improve data consistency.
+
+Check out the Use Cases & Applications section to see examples of companies and organizations that are using sentiment analysis for a diverse set of things.
+
+How Does Sentiment Analysis Work?
+How Does Sentiment Analysis Work?
+Sentiment Analysis Algorithms
+There are many methods and algorithms to implement sentiment analysis systems, which can be classified as:
+
+Rule-based systems that perform sentiment analysis based on a set of manually crafted rules.
+Automatic systems that rely on machine learning techniques to learn from data.
+Hybrid systems that combine both rule based and automatic approaches.
+Rule-based Approaches
+Usually, rule-based approaches define a set of rules in some kind of scripting language that identify subjectivity, polarity, or the subject of an opinion.
+
+The rules may use a variety of inputs, such as the following:
+
+Classic NLP techniques like stemming, tokenization, part of speech tagging and parsing.
+Other resources, such as lexicons (i.e. lists of words and expressions).
+A basic example of a rule-based implementation would be the following:
+
+Define two lists of polarized words (e.g. negative words such as bad, worst, ugly, etc and positive words such as good, best, beautiful, etc).
+Given a text:
+Count the number of positive words that appear in the text.
+Count the number of negative words that appear in the text.
+If the number of positive word appearances is greater than the number of negative word appearances return a positive sentiment, conversely, return a negative sentiment. Otherwise, return neutral.
+This system is very naïve since it doesn't take into account how words are combined in a sequence. A more advanced processing can be made, but these systems get very complex quickly. They can be very hard to maintain as new rules may be needed to add support for new expressions and vocabulary. Besides, adding new rules may have undesired outcomes as a result of the interaction with previous rules. As a result, these systems require important investments in manually tuning and maintaining the rules.
+
+Automatic Approaches
+Automatic methods, contrary to rule-based systems, don't rely on manually crafted rules, but on machine learning techniques. The sentiment analysis task is usually modeled as a classification problem where a classifier is fed with a text and returns the corresponding category, e.g. positive, negative, or neutral (in case polarity analysis is being performed).
+
+Said machine learning classifier can usually be implemented with the following steps and components:
+
+How does Sentiment Analysis Work
+
+The Training and Prediction Processes
+In the training process (a), our model learns to associate a particular input (i.e. a text) to the corresponding output (tag) based on the test samples used for training. The feature extractor transfers the text input into a feature vector. Pairs of feature vectors and tags (e.g. positive, negative, or neutral) are fed into the machine learning algorithm to generate a model.
+
+In the prediction process (b), the feature extractor is used to transform unseen text inputs into feature vectors. These feature vectors are then fed into the model, which generates predicted tags (again, positive, negative, or neutral).
+
+Feature Extraction from Text
+The first step in a machine learning text classifier is to transform the text into a numerical representation, usually a vector. Usually, each component of the vector represents the frequency of a word or expression in a predefined dictionary (e.g. a lexicon of polarized words). This process is known as feature extraction or text vectorization and the classical approach has been bag-of-words or bag-of-ngrams with their frequency.
+
+More recently, new feature extraction techniques have been applied based on word embeddings (also known as word vectors). This kind of representations makes it possible for words with similar meaning to have a similar representation, which can improve the performance of classifiers.
+
+Classification Algorithms
+The classification step usually involves a statistical model like Naïve Bayes, Logistic Regression, Support Vector Machines, or Neural Networks:
+
+Naïve Bayes: a family of probabilistic algorithms that uses Bayes’s Theorem to predict the category of a text.
+
+Linear Regression: a very well-known algorithm in statistics used to predict some value (Y) given a set of features (X).
+
+Support Vector Machines: a non-probabilistic model which uses a representation of text examples as points in a multidimensional space. These examples are mapped so that the examples of the different categories (sentiments) belong to distinct regions of that space.. Then, new texts are mapped onto that same space and predicted to belong to a category based on which region they fall into.
+
+Deep Learning: a diverse set of algorithms that attempts to imitate how the human brain works by employing artificial neural networks to process data.
+
+Sentiment Analysis Metrics and Evaluation
+There are many ways in which you can obtain performance metrics for evaluating a classifier and to understand how accurate a sentiment analysis model is. One of the most frequently used is known as cross-validation.
+
+What cross-validation does is splitting the training data into a certain number of training folds (with 75% of the training data) and a the same number of testing folds (with 25% of the training data), use the training folds to train the classifier, and test it against the testing folds to obtain performance metrics (see below). The process is repeated multiple times and an average for each of the metrics is calculated.
+
+If your testing set is always the same, you might be overfitting to that testing set, which means you might be adjusting your analysis to a given set of data so much that you might fail to analyze a different set. Cross-validation helps prevent that. The more data you have, the more folds you will be able to use.
+
+Precision, Recall, and Accuracy
+Precision, recall, and accuracy are standard metrics used to evaluate the performance of a classifier.
+
+Precision measures how many texts were predicted correctly as belonging to a given category out of all of the texts that were predicted (correctly and incorrectly) as belonging to the category.
+
+Recall measures how many texts were predicted correctly as belonging to a given category out of all the texts that should have been predicted as belonging to the category. We also know that the more data we feed our classifiers with, the better recall will be.
+
+Accuracy measures how many texts were predicted correctly (both as belonging to a category and not belonging to the category) out of all of the texts in the corpus.
+
+Most frequently, precision and recall are used to measure performance since accuracy alone does not say much about how good or bad a classifier is.
+
+For a difficult task like analyzing sentiment, precision and recall levels are likely to be low at first. As you feed the classifier with more data, performance will improve. However, as we will see below, since annotated data is not likely to be accurate, the chances are that precision levels won’t get too high. However, if you feed the classifier consistently tagged data, results are going to be as good as results can be for any other classification problem.
+
+Inter-annotator agreement
+When it comes to inter-annotator agreement (i.e. agreement by humans on a given annotation task), one of the most frequently used metrics is Krippendorff’s Alpha. According to Saif et al., best inter-annotator agreement for Twitter sentiment analysis reaches a 0.655 value of Krippendorff’s Alpha. This means there is a good deal of agreement (since alpha is greater than zero), but we believe it’s still far from great (e.g.: around 0.8, which is the minimum reliability threshold social scientists use in order to say data is reliable, see here). This said, only tentative conclusions about the sentiment of tweets can be drawn from the results of the annotation tasks described in the paper cited above.
+
+All in all, this 0.655 is an indicator of the difficulty of sentiment analysis detection for humans as well. Taking into consideration that machines learn from the data they are fed with, automatic predictions are likely to mirror the human disagreement embedded in the data.
+
+Hybrid Approaches
+The concept of hybrid methods is very intuitive: just combine the best of both worlds, the rule-based and the automatic ones. Usually, by combining both approaches, the methods can improve accuracy and precision.
+
+Sentiment Analysis Challenges
+Most of the work in sentiment analysis in recent years has been around developing more accurate sentiment classifiers by dealing with some of the main challenges and limitations in the field.
+
+Subjectivity and Tone
+The detection of subjective and objective texts is just as important as analyzing their tone. In fact, so called objective texts do not contain explicit sentiments. Say, for example, you intend to analyze the sentiment of the following two texts:
+
+The package is nice.
+
+The package is red.
+
+Most people would say that sentiment is positive for the first one and neutral for the second one, right? All predicates (adjectives, verbs, and some nouns) should not be treated the same with respect to how they create sentiment. In the examples above, nice is more subjective than red.
+
+Context and Polarity
+All utterances are uttered at some point in time, in some place, by and to some people, you get the point. All utterances are uttered in context. Analyzing sentiment without context gets pretty difficult. However, machines cannot learn about contexts if they are not mentioned explicitly. One of the problems that arise from context is changes in polarity. Look at the following responses to a survey:
+
+Everything of it.
+
+Absolutely nothing!
+
+Imagine the responses above come from answers to the question What did you like about the event? The first response would be positive and the second one would be negative, right? Now, imagine the responses come from answers to the question What did you DISlike about the event? The negative in the question will make sentiment analysis change altogether.
+
+A good deal of preprocessing or postprocessing will be needed if we are to take into account at least part of the context in which texts were produced. However, how to preprocess or postprocess data in order to capture the bits of context that will help analyze sentiment is not straightforward.
+
+Irony and Sarcasm
+Differences between literal and intended meaning (i.e. irony) and the more insulting or ridiculizing version of irony (i.e. sarcasm) usually change positive sentiment into negative whereas negative or neutral sentiment might be changed to positive. However, detecting irony or sarcasm takes a good deal of analysis of the context in which the texts are produced and, therefore, are really difficult to detect automatically.
+
+For example, look at some possible answers to the question Have you had a nice customer experience with us? below.
+
+Yeah. Sure.
+
+Not one, but many!
+
+What sentiment would you assign to the responses above? Probably, you have listened to the first response so many times, you would have said negative, right? The problem is there is no textual cue that will make a machine learn that negative sentiment since most often, yeah and sure belong to positive or neutral texts.
+
+How about the second response? In this context, sentiment is positive, but we’re sure you can come up with many different contexts in which the same response can express negative sentiment.
+
+Comparisons
+How to treat comparisons in sentiment analysis is another challenge worth tackling. Look at the texts below:
+
+This product is second to none.
+
+This is better than old tools.
+
+This is better than nothing.
+
+There are some comparisons like the first one above that do not need any contextual clues in order to be classified correctly.
+
+The second and third texts are a little more difficult to classify, though. Would you classify them as neutral or positive? Probably, you are more likely to choose positive for the second one and neutral for the third, right? Once again, context can make a difference. For example, if the old tools the second text talks about were considered useless in context, then the second text turns out to be pretty similar to the third text. However, if no context is provided, these texts feel different.
+
+Emojis
+There are two types of emojis according to Guibon et al.. Western emojis (e.g. :D) are encoded in only one character or in a combination of a couple of them whereas Eastern emojis (e.g. ¯ \ _ (ツ) _ / ¯) are a longer combination of characters of a vertical nature. Particularly in tweets, emojis play a role in the sentiment of texts.
+
+Sentiment analysis performed over tweets requires special attention to character-level as well as word-level. However, no matter how much attention you pay to each of them, a lot of preprocessing might be needed. For example, you might want to preprocess social media content and transform both Western and Eastern emojis into tokens and whitelist them (i.e. always take them as a feature for classification purposes) in order to help improve sentiment analysis performance.
+
+Here’s a quite comprehensive list of emojis and their unicode characters that may come in handy when preprocessing.
+
+Defining Neutral
+Defining what we mean by neutral is another challenge to tackle in order to perform accurate sentiment analysis. As in all classification problems, defining your categories -and, in this case, the neutral tag- is one of the most important parts of the problem. What you mean by neutral, positive, or negative does matter when you train sentiment analysis models. Since tagging data requires that tagging criteria be consistent, a good definition of the problem is a must.
+
+Here’s some ideas on what a neutral tag might contain:
+
+Objective texts. As we say here, so called objective texts do not contain explicit sentiments, so you should include those texts into the neutral category.
+Irrelevant information. If you haven’t preprocessed your data to filter out irrelevant information, you can tag it neutral. However, be careful! Only do this if you know how this could affect overall performance. Sometimes, you will be adding noise to your classifier and performance could get worse.
+Texts containing wishes. Some wishes like I wish the product had more integrations are generally neutral. However, those including comparisons, like I wish the product were better are pretty difficult to categorize
+How Accurate Is Sentiment Analysis?
+Here’s what sentiment analysis is: it’s a tremendously difficult task even for human beings. That said, sentiment analysis classifiers might not be as precise as other types of classifiers. Remember that inter-annotator agreement is pretty low and that machines learn from the data they are fed with (see above).
+
+That said, you might be saying, is it worth the effort? The answer is simple: it sure is worth it! Chances are that sentiment analysis predictions will be wrong from time to time, but by using sentiment analysis you will get the opportunity to get it right about 70-80% of the times you submit your texts for classification.
+
+If you or your company have not used sentiment analysis before, then you’ll see some improvement really quickly. For typical use cases, such as ticket routing, brand monitoring, and VoC analysis (see below), this means you will save a lot of time and money -which you are likely to be investing in in-house manual work nowadays,- save your teams some frustration, and increase your (or your company’s) productivity.
+
+Sentiment Analysis Use Cases & Applications
+Sentiment Analysis Use Cases & Applications
+In this section, we’ll take a dive into real life use cases, applications, and examples of the impact of all this can have on businesses, cities, and society – sentiment analysis in the wild, if you will.
+
+Specifically, we’ll examine the use of sentiment analysis in the following:
+
+Social media monitoring
+Brand monitoring
+Voice of customer (VoC)
+Customer service
+Market research
+Social Media Monitoring
+On the fateful evening of April 9th, 2017, United Airlines forcibly removed a passenger from an overbooked flight. The nightmare-ish incident was filmed by other passengers on their smartphones and posted immediately. One such video, posted to Facebook, was shared more than 87,000 times and viewed 6.8 million times by 6pm on Monday, just 24 hours later.
+
+The fiasco was magnified horrifically by the company’s dismissive response. On Monday afternoon, they tweeted a statement from the CEO apologizing for “having to re-accommodate customers.” Cue public outrage –you can imagine the field day on Twitter.
+
+This is exactly the kind of PR catastrophe we’d all like to do happily without. This is also an excellent example of why we care not only about if people are talking about our brand, but how they’re talking about it. More mentions does not equal positive mentions.
+
+In today’s day and age, brands of all shapes and sizes have meaningful interactions with customers, leads, and even competition on social networks like Facebook, Twitter, and Instagram. Most marketing departments are already tuned into to online mentions as far as volume –they measure more chatter as more brand awareness. Nowadays, however, we can take a step deeper. By using sentiment analysis on social media, we can get incredible insights into the quality of conversation that’s happening around a brand.
+
+How Sentiment Analysis Can Be Used
+Analyze tweets and/or facebook posts over a period of time to see sentiment of a particular audience.
+Run sentiment analysis on all social media mentions to your brand and automatically categorize by urgency.
+Automatically route social media mentions to team members best fit to respond.
+Automate any or all of these processes.
+Use analytics to gain deep insight into what’s happening across your social media channels.
